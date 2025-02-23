@@ -16,6 +16,11 @@ body{
     align-items: center;
 }
 
+select{
+    width: 70%;
+    height: 120px;
+}
+
 .midblocks>*{
     display: flex;
     flex-direction: column;
@@ -207,5 +212,41 @@ form > * {
     .radio{
         color: #aed7fd;
     }
+
+    .loader {
+        border: 16px solid #f3f3f3; /* Light grey */
+        border-top: 16px solid #3498db; /* Blue */
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 2s linear infinite;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .success {
+        background: #d4edda; /* Светло-зеленый фон */
+        color: #155724; /* Темно-зеленый текст */
+        border: 1px solid #c3e6cb; /* Зеленая рамка */
+        padding: 10px; /* Отступы внутри контейнера */
+        border-radius: 5px; /* Закругленные углы */
+        margin-bottom: 15px; /* Отступ снизу */
+        font-size: 14px; /* Размер текста */
+        width: 100%; /* Ширина контейнера */
+        text-align: center; /* Выравнивание текста по центру */
+      }
+      .error {
+        background: #ffa2a2; /* Светло-красный фон */
+        color: #721c24; /* Темно-красный текст */
+        border: 1px solid #ef4757; /* Красная рамка */
+        padding: 10px; /* Отступы внутри контейнера */
+        border-radius: 5px; /* Закругленные углы */
+        margin-bottom: 15px; /* Отступ снизу */
+        font-size: 14px; /* Размер текста */
+        width: 100%; /* Ширина контейнера */
+        text-align: center; /* Выравнивание текста по центру */
+      }
     
 }

@@ -1,10 +1,4 @@
-###Конфигурация БД. Решётки -- комментарии###
-
-CREATE DATABASE back3;
-
-###Затем, через консоль подключаясь к -d back3 (Либо своё название)###
-
-CREATE TABLE forms
+CREATE TABLE IF NOT EXISTS forms
 (
 	form_id SERIAL PRIMARY KEY,
 	fio CHARACTER VARYING(150),
@@ -15,13 +9,13 @@ CREATE TABLE forms
 	bio TEXT
 );
 
-CREATE TABLE langs
+CREATE TABLE IF NOT EXISTS langs
 (
 	lang_id SERIAL PRIMARY KEY,
 	lang_name CHARACTER VARYING(30)
 );
 
-CREATE TABLE favlangs(
+CREATE TABLE IF NOT EXISTS favlangs(
 	form_id INTEGER,
 	lang_id INTEGER,
 	PRIMARY KEY (form_id, lang_id),
