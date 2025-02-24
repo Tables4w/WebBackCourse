@@ -33,7 +33,7 @@ const errors = [
         description: "Поле обязательно для подтверждения; поставьте галочку, чтобы подтвердить ознакомление с контрактом.",
     },
 ]
-const backUrl = 'http://158.160.154.2:8080/process'
+const backUrl = 'http://158.160.129.110:8080/process'
 document.addEventListener('DOMContentLoaded', function() {
 const forma = document.getElementById('forma')
 forma.addEventListener('submit', function (event) {
