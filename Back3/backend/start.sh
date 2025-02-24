@@ -37,7 +37,7 @@ if [ -d "$PROJECT_DIR" ]; then
   fi
 else
   echo "Директория проекта $PROJECT_DIR не существует. Клонирую репозиторий..."
-  git clone https://github.com/c4erries/backend.git "$PROJECT_DIR"
+  git clone https://github.com/Tables4w/backend3.git "$PROJECT_DIR"
   cd "$PROJECT_DIR"
   echo "Запускаю сборку, а затем контейнеры..."
   sudo docker-compose up -d --build
